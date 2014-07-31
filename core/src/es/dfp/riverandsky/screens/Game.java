@@ -83,9 +83,12 @@ public class Game extends PApplet implements Screen {
 	private float speed = 1;
 	private float jumpHeight = 20;
 	private Vector2 movement = new Vector2();
+
+	enum moveState {MS_STOP, MS_RIGHT, MS_LEFT};
+	private moveState move = moveState.MS_STOP;
 	
 	public static int numFootContacts = 0;
-	private int jumpTimeout = 0, clampX = 0;
+	private int jumpTimeout = 0;
 	
 	//background and tile map layers
 	private TextureAtlas cosmicAtlas, beachAtlas, isleAtlas;
@@ -142,20 +145,22 @@ public class Game extends PApplet implements Screen {
 			accumulator -= TIMESTEP;
 		}
 
-		//player.applyForceToCenter(movement, true);
-		if (jumpTimeout < -35) movement.y = 0;
-		if (clampX < -20) {
-			movement.x = 0;
-			clampX = 0;
+		movement.x = player.getLinearVelocity().x;
+		float desiredVel = 0;
+		switch (move) {
+		case MS_LEFT: desiredVel = Math.max(movement.x - 0.6f, -15.0f); break; 
+		case MS_STOP: desiredVel = movement.x * 0.93f; break; 
+		case MS_RIGHT: desiredVel = Math.min(movement.x + 0.6f, 15.0f); break; 
 		}
-		player.applyLinearImpulse(movement, player.getLocalCenter(), true);
+		float deltaV = desiredVel - movement.x;
+		float impulse = player.getMass() * deltaV;	//f = mv / t		
+		player.applyLinearImpulse(new Vector2 (impulse, movement.y), player.getWorldCenter(), true);
+		
+		if (jumpTimeout < -35) movement.y = 0;				//set long press jump limit 
 		jumpTimeout--;
-		clampX--;
 		
 		System.out.println("jumpTimeout: " + jumpTimeout);
-		System.out.println("clampX: " + clampX);
 
-		
 		//RENDER\\
 /*		
 		renderer.getSpriteBatch().begin();													//START
@@ -411,7 +416,7 @@ public class Game extends PApplet implements Screen {
 		FixtureDef fixtureDef = new FixtureDef();
 		fixtureDef.shape = playerShape;
 		fixtureDef.density = 0.6f;
-		fixtureDef.friction = 0.9f;
+		fixtureDef.friction = 0.5f;
 		fixtureDef.restitution = 0;
 		
 		player = world.createBody(bodyDef);
@@ -530,19 +535,19 @@ public class Game extends PApplet implements Screen {
 					if (numFootContacts < 1) break;
 					if (jumpTimeout > 0) break;
 					player.applyLinearImpulse(0, jumpHeight, player.getLocalCenter().x, player.getLocalCenter().y, true);
-					movement.y = speed;
 					jumpTimeout = 15;
+					movement.y = speed;
 					break;
 				case Keys.DOWN:
 					movement.y = -speed;
 					break;
 				case Keys.LEFT:
-					movement.x = -speed;
-					clampX = 10;
+					move = moveState.MS_LEFT;
+					//movement.x = -speed;
 					break;
 				case Keys.RIGHT:
-					movement.x = speed;
-					clampX = 10;
+					move = moveState.MS_RIGHT;
+					//movement.x = speed;
 				}
 				return true;
 			}
@@ -556,8 +561,8 @@ public class Game extends PApplet implements Screen {
 					break;
 				case Keys.LEFT:
 				case Keys.RIGHT:
-					movement.x = 0;
-					clampX = 0;
+					move = moveState.MS_STOP;
+					//movement.x = 0;
 				}
 				return true;
 			}
