@@ -5,7 +5,8 @@ import org.robovm.apple.uikit.UIApplication;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import es.dfp.riverandsky.RiverAndSky;
+
+import es.dfc.riverandsky.RiverAndSky;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override

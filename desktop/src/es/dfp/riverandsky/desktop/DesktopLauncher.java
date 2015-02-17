@@ -2,7 +2,8 @@ package es.dfp.riverandsky.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import es.dfp.riverandsky.RiverAndSky;
+
+import es.dfc.riverandsky.RiverAndSky;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

@@ -3,7 +3,8 @@ package es.dfp.riverandsky.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import es.dfp.riverandsky.RiverAndSky;
+
+import es.dfc.riverandsky.RiverAndSky;
 
 public class HtmlLauncher extends GwtApplication {
 

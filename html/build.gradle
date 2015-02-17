@@ -7,8 +7,8 @@ gwt {
     minHeapSize="1G"
 
     src = files(file("src/")) // Needs to be in front of "modules" below.
-    modules 'es.dfp.riverandsky.GdxDefinition'
-    devModules 'es.dfp.riverandsky.GdxDefinitionSuperdev'
+    modules 'es.dfc.riverandsky.GdxDefinition'
+    devModules 'es.dfc.riverandsky.GdxDefinitionSuperdev'
     project.webAppDirName = 'webapp'
 
     compiler {

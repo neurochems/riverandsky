@@ -4,7 +4,8 @@ import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import es.dfp.riverandsky.RiverAndSky;
+
+import es.dfc.riverandsky.RiverAndSky;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override
