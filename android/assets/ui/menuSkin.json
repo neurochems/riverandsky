@@ -1,0 +1,16 @@
+{
+	"com.badlogic.gdx.graphics.Color": {
+		"trans": { "r": 0, "g": 0, "b": 0, "a": 0 },
+		"white": { "r": 1, "g": 1, "b": 1, "a": 1 },
+		"black": { "r": 0, "g": 0, "b": 0, "a": 1 },
+		"cyan":  { "r": 0, "g": 255, "b": 255, "a": 1 },	
+		"yellow":{ "r": 255, "g": 255, "b": 0, "a": 1 },	
+		"mag":   { "r": 255, "g": 0, "b": 255, "a": 1 },	
+	},
+	"com.badlogic.gdx.graphics.g2d.BitmapFont": {
+		"gotham64": { "file": "font/gotham64.fnt" }			
+	},
+	"com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+		"defaultB": { "font": gotham64, "fontColor": black }
+	}
+}

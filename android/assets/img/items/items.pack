@@ -1,0 +1,173 @@
+
+items.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+orb
+  rotate: false
+  xy: 0, 851
+  size: 476, 492
+  orig: 238, 246
+  offset: 0, 0
+  index: -1
+orb
+  rotate: false
+  xy: 476, 851
+  size: 476, 492
+  orig: 238, 246
+  offset: 0, 0
+  index: -1
+orb
+  rotate: false
+  xy: 952, 851
+  size: 476, 492
+  orig: 238, 246
+  offset: 0, 0
+  index: -1
+orb
+  rotate: false
+  xy: 1428, 851
+  size: 476, 492
+  orig: 238, 246
+  offset: 0, 0
+  index: -1
+orb
+  rotate: false
+  xy: 1904, 851
+  size: 476, 492
+  orig: 238, 246
+  offset: 0, 0
+  index: -1
+orb
+  rotate: false
+  xy: 2380, 851
+  size: 476, 492
+  orig: 238, 246
+  offset: 0, 0
+  index: -1
+melon
+  rotate: false
+  xy: 0, 602
+  size: 233, 249
+  orig: 116, 125
+  offset: 0, 0
+  index: -1
+melon
+  rotate: false
+  xy: 233, 602
+  size: 233, 249
+  orig: 116, 125
+  offset: 0, 0
+  index: -1
+melon
+  rotate: false
+  xy: 466, 602
+  size: 233, 249
+  orig: 116, 125
+  offset: 0, 0
+  index: -1
+melon
+  rotate: false
+  xy: 699, 602
+  size: 233, 249
+  orig: 116, 125
+  offset: 0, 0
+  index: -1
+melon
+  rotate: false
+  xy: 932, 602
+  size: 233, 249
+  orig: 116, 125
+  offset: 0, 0
+  index: -1
+melon
+  rotate: false
+  xy: 1165, 602
+  size: 233, 249
+  orig: 116, 125
+  offset: 0, 0
+  index: -1
+grilled
+  rotate: false
+  xy: 0, 328
+  size: 298, 274
+  orig: 149, 137
+  offset: 0, 0
+  index: -1
+grilled
+  rotate: false
+  xy: 298, 328
+  size: 298, 274
+  orig: 149, 137
+  offset: 0, 0
+  index: -1
+grilled
+  rotate: false
+  xy: 596, 328
+  size: 298, 274
+  orig: 149, 137
+  offset: 0, 0
+  index: -1
+grilled
+  rotate: false
+  xy: 894, 328
+  size: 298, 274
+  orig: 149, 137
+  offset: 0, 0
+  index: -1
+grilled
+  rotate: false
+  xy: 1192, 328
+  size: 298, 274
+  orig: 149, 137
+  offset: 0, 0
+  index: -1
+grilled
+  rotate: false
+  xy: 1490, 328
+  size: 298, 274
+  orig: 149, 137
+  offset: 0, 0
+  index: -1
+cheesus
+  rotate: false
+  xy: 0, 0
+  size: 391, 328
+  orig: 195, 164
+  offset: 0, 0
+  index: -1
+cheesus
+  rotate: false
+  xy: 391, 0
+  size: 391, 328
+  orig: 195, 164
+  offset: 0, 0
+  index: -1
+cheesus
+  rotate: false
+  xy: 782, 0
+  size: 391, 328
+  orig: 195, 164
+  offset: 0, 0
+  index: -1
+cheesus
+  rotate: false
+  xy: 1173, 0
+  size: 391, 328
+  orig: 195, 164
+  offset: 0, 0
+  index: -1
+cheesus
+  rotate: false
+  xy: 1564, 0
+  size: 391, 328
+  orig: 195, 164
+  offset: 0, 0
+  index: -1
+cheesus
+  rotate: false
+  xy: 1955, 0
+  size: 391, 328
+  orig: 195, 164
+  offset: 0, 0
+  index: -1

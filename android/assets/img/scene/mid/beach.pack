@@ -1,0 +1,19 @@
+
+beach1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+beach
+  rotate: false
+  xy: 0, 0
+  size: 3053, 1676
+  orig: 1527, 838
+  offset: 0, 0
+  index: -1
+beach
+  rotate: false
+  xy: 3053, 0
+  size: 3053, 1676
+  orig: 1527, 838
+  offset: 0, 0
+  index: -1

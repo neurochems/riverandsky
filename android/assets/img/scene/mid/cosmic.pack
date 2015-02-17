@@ -1,0 +1,33 @@
+
+cosmic.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+cosmic
+  rotate: false
+  xy: 0, 0
+  size: 432, 590
+  orig: 216, 295
+  offset: 0, 0
+  index: -1
+cosmic
+  rotate: false
+  xy: 431, 0
+  size: 432, 590
+  orig: 216, 295
+  offset: 0, 0
+  index: -1
+cosmic
+  rotate: false
+  xy: 862, 0
+  size: 432, 590
+  orig: 216, 295
+  offset: 0, 0
+  index: -1
+cosmic
+  rotate: false
+  xy: 1292, 0
+  size: 432, 590
+  orig: 216, 295
+  offset: 0, 0
+  index: -1
